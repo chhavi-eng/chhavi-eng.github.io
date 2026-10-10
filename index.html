@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,90 +7,164 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
 
   <!-- Navbar -->
-  <nav class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center border-b border-slate-800">
-    <span class="text-xl font-bold tracking-tight text-white">Chhavi<span class="text-indigo-400">.dev</span></span>
-    <div class="space-x-6 text-sm text-slate-400">
-      <a href="#about" class="hover:text-white transition">About</a>
-      <a href="#skills" class="hover:text-white transition">Skills</a>
-      <a href="#projects" class="hover:text-white transition">Projects</a>
-      <a href="https://linkedin.com/in/chhavi-8627b0307" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition">LinkedIn</a>
+  <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-xl font-bold tracking-tight text-white">Chhavi<span class="text-indigo-400">.dev</span></span>
+      <div class="flex items-center space-x-6 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#certifications" class="hover:text-white transition">Certifications</a>
+        <a href="https://linkedin.com/in/chhavi-8627b0307" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition">
+          <i class="fab fa-linkedin mr-1"></i>LinkedIn
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="max-w-5xl mx-auto px-6 py-20 text-center md:text-left md:flex md:items-center md:justify-between">
-    <div class="md:w-2/3">
-      <p class="text-indigo-400 text-sm font-semibold tracking-wider uppercase mb-2">BCA (Cloud & Cyber Security)</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-        Building robust backend APIs & cloud infrastructure.
+  <header id="about" class="max-w-5xl mx-auto px-6 py-20 md:py-24">
+    <div class="max-w-3xl">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open to Software Engineering Opportunities
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        Designing robust backend APIs & cloud architectures.
       </h1>
-      <p class="text-slate-400 text-base md:text-lg mb-8 leading-relaxed">
-        Passionate about Java, Spring Boot, MySQL, and automated deployments on AWS & Microsoft Azure.
+      <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-8">
+        I am a BCA (Cloud & Cyber Security) student building scalable REST services with Java, Spring Boot, and MySQL, with hands-on deployments across AWS and Microsoft Azure.
       </p>
-      <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-        <a href="mailto:tyagichhavi508@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">
-          Contact Me
+      <div class="flex flex-wrap gap-4 items-center">
+        <a href="mailto:tyagichhavi508@gmail.com" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-lg shadow-lg shadow-indigo-600/20 transition">
+          <i class="fas fa-envelope"></i> Get In Touch
         </a>
-        <a href="https://github.com/chhavi-eng" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-200 font-medium px-6 py-3 rounded-lg transition">
-          <i class="fab fa-github mr-2"></i>GitHub Profile
+        <a href="https://github.com/chhavi-eng" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-200 font-medium px-6 py-3 rounded-lg transition">
+          <i class="fab fa-github"></i> GitHub Profile
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Skills Section -->
-  <section id="skills" class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800">
-    <h2 class="text-2xl font-bold text-white mb-6">Technical Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
-        <h3 class="text-indigo-400 font-semibold mb-2">Languages</h3>
-        <p class="text-sm text-slate-300">Java, Python, MySQL, C</p>
+  <!-- Technical Skills Section -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+      <i class="fas fa-code text-indigo-400 text-xl"></i> Technical Stack
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">Languages & DB</h3>
+        <p class="text-slate-300 text-sm">Java, Python, MySQL (Core SQL), C Language</p>
       </div>
-      <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
-        <h3 class="text-indigo-400 font-semibold mb-2">Backend</h3>
-        <p class="text-sm text-slate-300">Spring Boot, REST APIs, JPA, Hibernate</p>
+      <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">Backend & APIs</h3>
+        <p class="text-slate-300 text-sm">Spring Boot, Spring Data JPA, REST APIs, Hibernate</p>
       </div>
-      <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
-        <h3 class="text-indigo-400 font-semibold mb-2">Cloud</h3>
-        <p class="text-sm text-slate-300">AWS (EC2, S3, RDS, IAM), Azure</p>
+      <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">Cloud Platforms</h3>
+        <p class="text-slate-300 text-sm">AWS (EC2, S3, RDS, IAM), Azure (VMs, Blob Storage)</p>
       </div>
-      <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
-        <h3 class="text-indigo-400 font-semibold mb-2">Tools</h3>
-        <p class="text-sm text-slate-300">Docker, Git, Postman, Linux CLI</p>
+      <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 hover:border-indigo-500/40 transition">
+        <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">Tools & DevOps</h3>
+        <p class="text-slate-300 text-sm">Docker, Git, Linux CLI, Bash, Postman, VS Code</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800">
-    <h2 class="text-2xl font-bold text-white mb-6">Featured Projects</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+  <!-- Featured Projects Section -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+      <i class="fas fa-layer-group text-indigo-400 text-xl"></i> Featured Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/60 flex flex-col justify-between">
+      <!-- Project 1 -->
+      <div class="bg-slate-900/50 rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-indigo-500/30 transition">
         <div>
-          <h3 class="text-lg font-bold text-white mb-2">Student Management API</h3>
-          <p class="text-sm text-slate-400 mb-4">RESTful service in Java & Spring Boot with MySQL persistent storage and Postman test suites.</p>
+          <span class="text-xs font-semibold px-2 py-1 bg-amber-500/10 text-amber-400 rounded">Java / Spring Boot</span>
+          <h3 class="text-lg font-bold text-white mt-3 mb-2">Student Management API</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            RESTful API managing CRUD endpoints with JPA repositories, MySQL storage, and input sanitization tested via Postman.
+          </p>
         </div>
-        <a href="https://github.com/chhavi-eng/java-project-" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium">View Repository &rarr;</a>
+        <a href="https://github.com/chhavi-eng/java-project-" target="_blank" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 text-sm font-medium">
+          Source Code <i class="fas fa-arrow-right ml-1 text-xs"></i>
+        </a>
       </div>
 
-      <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/60 flex flex-col justify-between">
+      <!-- Project 2 -->
+      <div class="bg-slate-900/50 rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-indigo-500/30 transition">
         <div>
-          <h3 class="text-lg font-bold text-white mb-2">Cloud-Native Deployment</h3>
-          <p class="text-sm text-slate-400 mb-4">Hosted secure AWS infrastructure utilizing EC2, S3, RDS, and IAM access policies.</p>
+          <span class="text-xs font-semibold px-2 py-1 bg-blue-500/10 text-blue-400 rounded">AWS Infrastructure</span>
+          <h3 class="text-lg font-bold text-white mt-3 mb-2">Cloud-Native Deployment</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Secure cloud infrastructure utilizing AWS EC2, S3 buckets, RDS database integration, IAM security rules, and VPC groups.
+          </p>
         </div>
-        <a href="https://github.com/chhavi-eng/cloud-native-application" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium">View Repository &rarr;</a>
+        <a href="https://github.com/chhavi-eng/cloud-native-application" target="_blank" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 text-sm font-medium">
+          Source Code <i class="fas fa-arrow-right ml-1 text-xs"></i>
+        </a>
       </div>
 
-      <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/60 flex flex-col justify-between">
+      <!-- Project 3 -->
+      <div class="bg-slate-900/50 rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-indigo-500/30 transition">
         <div>
-          <h3 class="text-lg font-bold text-white mb-2">Log Analytics Engine</h3>
-          <p class="text-sm text-slate-400 mb-4">Python automation engine running on Azure VMs parsing server metrics and syncing with Blob Storage.</p>
+          <span class="text-xs font-semibold px-2 py-1 bg-cyan-500/10 text-cyan-400 rounded">Python / Azure</span>
+          <h3 class="text-lg font-bold text-white mt-3 mb-2">Log Analytics Engine</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Automated server diagnostics engine parsing system metrics on Azure VMs and archiving processed structured logs into Blob Storage.
+          </p>
         </div>
-        <a href="https://github.com/chhavi-eng/-log-analytics-engine" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium">View Repository &rarr;</a>
+        <a href="https://github.com/chhavi-eng/-log-analytics-engine" target="_blank" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 text-sm font-medium">
+          Source Code <i class="fas fa-arrow-right ml-1 text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications & Education Section -->
+  <section id="certifications" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Certifications -->
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <i class="fas fa-certificate text-indigo-400 text-xl"></i> Certifications
+        </h2>
+        <ul class="space-y-4 text-sm text-slate-300">
+          <li class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+            <span class="font-semibold text-white block">Microsoft Azure Cloud Computing</span>
+            <span class="text-slate-400 text-xs">E&ICT Academy, IIT Kanpur</span>
+          </li>
+          <li class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+            <span class="font-semibold text-white block">Introduction to Cloud (AWS)</span>
+            <span class="text-slate-400 text-xs">E&ICT Academy, IIT Kanpur</span>
+          </li>
+          <li class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+            <span class="font-semibold text-white block">Linux Administration</span>
+            <span class="text-slate-400 text-xs">E&ICT Academy, IIT Kanpur</span>
+          </li>
+          <li class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+            <span class="font-semibold text-white block">Cloud Computing & IoT</span>
+            <span class="text-slate-400 text-xs">NPTEL (IIT Kharagpur)</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <i class="fas fa-graduation-cap text-indigo-400 text-xl"></i> Education
+        </h2>
+        <div class="bg-slate-900/60 p-6 rounded-lg border border-slate-800">
+          <span class="text-indigo-400 text-xs font-semibold uppercase">2024 — 2027</span>
+          <h3 class="text-lg font-bold text-white mt-1">Bachelor of Computer Applications (BCA)</h3>
+          <p class="text-slate-400 text-sm mt-1">Specialization: Cloud & Cyber Security</p>
+          <p class="text-slate-500 text-xs mt-3">Relevant Coursework: DSA, DBMS, Operating Systems, Computer Networks</p>
+        </div>
       </div>
 
     </div>
@@ -98,8 +172,10 @@
 
   <!-- Footer -->
   <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-slate-800 text-center text-xs text-slate-500">
-    &copy; 2026 Chhavi Tyagi. Hosted on GitHub Pages.
+    &copy; 2026 Chhavi Tyagi. Hosted with GitHub Pages.
   </footer>
 
 </body>
 </html>
+
+  
